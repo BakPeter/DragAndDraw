@@ -6,9 +6,14 @@ public class Box {
     private PointF mOrigin;
     private PointF mCurrent;
 
-    public Box(PointF origin){
+    public Box(PointF origin) {
         mOrigin = origin;
         mCurrent = origin;
+    }
+
+    public Box(PointF origin, PointF current) {
+        mOrigin = origin;
+        mCurrent = current;
     }
 
     public PointF getCurrent() {
